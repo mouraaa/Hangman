@@ -35,7 +35,7 @@ words = [] #has to be all uppercase bc of line 45 when we use chr(A + i), we are
 #were compare if those capital letters in the list match the letters in the word. They will never match if its capital a and lowercase a
 with open("words.txt") as f:
 	for i in f:
-		words.append(i.rstrip())
+		words.append(i.upper().rstrip())
 word = random.choice(words)
 guessed = []
 
@@ -79,7 +79,11 @@ while run:
 		if letter in guessed:
 			display_word += letter + " "
 		else:
-			display_word += "_ "
+			if letter == ' ':
+				display_word += '  '
+				guessed.append(' ')
+			else:
+				display_word += "_ "
 	text = word_font.render(display_word, 1, BLACK)
 	window.blit(text,(400,200))
 
