@@ -8,6 +8,5 @@ https://www.youtube.com/watch?v=UEO1B_llDnc&list=PLzMcBGfZo4-ndZlN21DasvpfKwIc1r
 After you have either win or lost, a message will appear on your terminal. Please follow the directions to restart.
 
 ### Possible Updates:
-- Include multiple words in one attempt 
-- Add GUI for restarting the game
+- Add GUI for restarting the game instead of being terminal based
 
