@@ -15,7 +15,7 @@ clock = pygame.time.Clock()
 #Loading Images
 images = [] 
 for i in range(1,8): 
-	image = pygame.image.load("hangman" + str(i) + ".png") 
+	image = pygame.image.load("images/hangman" + str(i) + ".png") 
 	images.append(image) 
 
 #--------------------------------------------------------
